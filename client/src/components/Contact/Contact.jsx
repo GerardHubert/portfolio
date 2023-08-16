@@ -17,14 +17,30 @@ function Contact() {
   return (
     <section id="contact-section" className='contact-section'>
       <div className="contact-form-aside">
-        <h2 className='contact-title'>Contact</h2>
+        <h2 className='section-title'>Contact</h2>
         <div className="contact-form-image-wrapper">
           <img className='contact-form-image' src="/email2.png" alt="contactez-moi" />
+        </div>
+        <div className="network">
+          <p className="network-text">
+            Que vous cherchiez à développer votre application web de A à Z ou à ajouter de nouvelles fonctionnalités, n'hésitez pas à me contacter via les réseaux ou directement par mail.
+          </p>
+          <div className='network-icons-wrapper'>
+            <a href="https://www.linkedin.com/in/g%C3%A9rard-hubert-ab6213206/" target='_blank' rel='noreferrer'>
+              <img src="public/linkedin-icon.png" alt="lien vers mon profil linkedin" title="Rencontrons-nous sur linkedIn !" />
+            </a>
+            <a href="https://github.com/GerardHubert" target='_blank' rel='noreferrer'>
+              <img src="public/github-icon.png" alt="lien vers mon profil github" title='Jetez un oeil à mon GitHub !' />
+            </a>
+            <a href="mailto:gerard.hubert@mail.fr">
+              <img src="public/email-icon.png" alt="envoyez-moi un courriel" title="Ecrivez-moi directement par mail" />
+            </a>
+          </div>
         </div>
       </div>
       <form action="/sendmail" className="contact-form">
         <fieldset>
-          <legend>Fais pas le timide !!</legend>
+          <legend>Renseignez le formulaire de contact</legend>
           <div className="form-row">
             <input className="name-input" type="text" name="name" id="name"
               onFocus={e => handleFocus(e)}

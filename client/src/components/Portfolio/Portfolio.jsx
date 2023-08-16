@@ -4,7 +4,13 @@ function Portfolio() {
 
   return (
     <section id="portfolio-section" className='portfolio-section'>
-      <h2 className='section-title'>portfolio</h2>
+      <header className='section-header'>
+        <h2 className="section-title">portfolio</h2>
+        <div className="section-title-separator">
+          <hr className='separator' />
+          <i className="fa-solid fa-code separator-icon"></i>
+        </div>
+      </header>
       <div className="portfolio-cards-container">
         <div className='portfolio-card'>
           <div className="thumbnail-wrapper">

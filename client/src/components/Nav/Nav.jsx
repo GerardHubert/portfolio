@@ -8,7 +8,7 @@ function Nav() {
           <a href="#home-section">Accueil</a >
         </li>
         <li className="nav-item">
-          <a href="/skills">Compétences</a>
+          <a href="#skills-section">Compétences</a>
         </li>
         <li className="nav-item">
           <a href="#portfolio-section">Portfolio</a>
@@ -17,7 +17,7 @@ function Nav() {
           <a href="#contact-section">Contact</a>
         </li>
       </ul >
-    </div >
+    </div>
   );
 }
 
