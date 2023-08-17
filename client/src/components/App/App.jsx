@@ -4,6 +4,8 @@ import Home from '../Home/Home.jsx'
 import Skills from '../Skills/Skills'
 import Portfolio from '../Portfolio/Portfolio'
 import Contact from '../Contact/Contact'
+import Footer from '../Footer/Footer'
+
 function App() {
 
   return (
@@ -14,6 +16,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Contact />
+        <Footer />
       </main>
     </>
   )

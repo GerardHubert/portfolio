@@ -2,8 +2,29 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .about-me {
-  width: 80%
+  width: 60%;
+  font-size: 1.2em;
+}
+
+.about-me a {
+  text-decoration: none;
+  color: rgba(46, 134, 222, 1.0);
+  font-weight: bold;
+  transform: scale(1.1)
+}
+
+.selfie-container {
+  width: 350px;
+  height: 350px;
+}
+
+.selfie {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 10px 7px 5px rgba(46, 134, 222, 0.4)
 }

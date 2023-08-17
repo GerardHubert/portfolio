@@ -26,15 +26,21 @@ function Contact() {
             Que vous cherchiez à développer votre application web de A à Z ou à ajouter de nouvelles fonctionnalités, n'hésitez pas à me contacter via les réseaux ou directement par mail.
           </p>
           <div className='network-icons-wrapper'>
-            <a href="https://www.linkedin.com/in/g%C3%A9rard-hubert-ab6213206/" target='_blank' rel='noreferrer'>
-              <img src="public/linkedin-icon.png" alt="lien vers mon profil linkedin" title="Rencontrons-nous sur linkedIn !" />
-            </a>
-            <a href="https://github.com/GerardHubert" target='_blank' rel='noreferrer'>
-              <img src="public/github-icon.png" alt="lien vers mon profil github" title='Jetez un oeil à mon GitHub !' />
-            </a>
-            <a href="mailto:gerard.hubert@mail.fr">
-              <img src="public/email-icon.png" alt="envoyez-moi un courriel" title="Ecrivez-moi directement par mail" />
-            </a>
+            <div className="network-icon">
+              <a href="https://www.linkedin.com/in/g%C3%A9rard-hubert-ab6213206/" target='_blank' rel='noreferrer'>
+                <img src="public/linkedin-icon.png" alt="lien vers mon profil linkedin" title="Rencontrons-nous sur linkedIn !" />
+              </a>
+            </div>
+            <div className="network-icon">
+              <a href="https://github.com/GerardHubert" target='_blank' rel='noreferrer'>
+                <img src="public/github-icon.png" alt="lien vers mon profil github" title='Jetez un oeil à mon GitHub !' />
+              </a>
+            </div>
+            <div className="network-icon">
+              <a href="mailto:gerard.hubert@mail.fr">
+                <img src="public/email-icon.png" alt="envoyez-moi un courriel" title="Ecrivez-moi directement par mail" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

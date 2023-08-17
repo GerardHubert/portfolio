@@ -5,7 +5,15 @@ function Home() {
     <section id="home-section" className="home-section">
       <div className="about-me">
         <h1 className='home-section-title'>Hey je suis Gérard, Développeur web PHP | Symfony</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit maxime culpa ut similique, eaque perferendis minus voluptatem incidunt totam commodi accusamus optio soluta debitis laborum quia sequi quod, architecto iste, corporis laboriosam sunt sit natus perspiciatis! Dolorum ut, accusamus ullam deleniti veritatis iure at laborum pariatur adipisci consequatur eos quidem nostrum saepe soluta sequi praesentium earum odio sed quae, assumenda enim voluptate. Nostrum iusto, voluptates veniam doloribus beatae consectetur qui similique distinctio earum culpa nulla explicabo ducimus. Sequi unde odio temporibus optio excepturi ipsa labore consequatur iste, ipsum dolor expedita neque dolorem quam magni ex debitis nihil, obcaecati commodi!</p>
+        <p>Passioné par le web et les novelles technologies, je développe des applications et site web.
+          Du site vitre en single page au site e-commerce en passant par les blogs ou espaces administrateurs, j'adore voir prendre vie les projets.
+          Je suis compétent en front-end, en intégrationii web et avec Javascript, React.JS et Node.JS, mais j'ai une appétence particulière pour le développement côté serveur sous PHP et Symfony.
+          Sinon, quand je ne m'arrache pas les cheveux devant un écran noir, j'apprécie les longues balades avec ma famille et mon chien (ou un bon vieux film d'arts martiaux s'il pleut).
+          N'hésitez pas à <a href='#contact'>me contacter</a> pour discuter de votre projet ou des nouvelles fonctionnalités que vous aimeriez apporter à votre site.
+        </p>
+      </div>
+      <div className="selfie-container">
+        <img src="https://picsum.photos/350/350" alt="gérard hubert" className="selfie" />
       </div>
     </section>
   );
