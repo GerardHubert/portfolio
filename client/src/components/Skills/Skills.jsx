@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import './skills.css';
 
 function Skills() {
+
   return (
     <section id='skills-section' className="skills-section">
       <header className='section-header'>
@@ -14,7 +16,7 @@ function Skills() {
       <div className="skills-container">
         <div className="skill-card">
           <div className="image-wrapper">
-            <img src="public/front-end.png" alt="développement front-end" />
+            <img src="/front-end.png" alt="développement front-end" />
           </div>
           <h3 className='card-title'>front-end</h3>
           <p>
@@ -24,7 +26,7 @@ function Skills() {
         </div>
         <div className="skill-card">
           <div className="image-wrapper">
-            <img src="public/back-end.png" alt="développement back-end" />
+            <img src="/back-end.png" alt="développement back-end" />
           </div>
           <h3 className='card-title'>back-end</h3>
           <p>Les sites dynamiques avec bases de données, espaces utilisateurs, dashboard..
@@ -33,7 +35,7 @@ function Skills() {
         </div>
         <div className="skill-card">
           <div className="image-wrapper">
-            <img src="public/responsive.png" alt="design responsive" />
+            <img src="/responsive.png" alt="design responsive" />
           </div>
           <h3 className='card-title'>responsive</h3>
           <p>Parce que le web ne se consulte plus uniquement devant un ordinateur, le responsive design a pour but d'adapter
@@ -42,7 +44,7 @@ function Skills() {
         </div>
         <div className="skill-card">
           <div className="image-wrapper">
-            <img src="public/handshake.png" alt="accompagnement et agilité" />
+            <img src="/handshake.png" alt="accompagnement et agilité" />
           </div>
           <h3 className='card-title'>agile | problem solver</h3>
           <p>
@@ -52,7 +54,7 @@ function Skills() {
         </div>
         <div className="skill-card">
           <div className="image-wrapper">
-            <img src="public/tests.png" alt="applications testée et approuvée" />
+            <img src="/tests.png" alt="applications testée et approuvée" />
           </div>
           <h3 className='card-title'>testé</h3>
           <p>
@@ -62,7 +64,7 @@ function Skills() {
         </div>
         <div className="skill-card">
           <div className="image-wrapper">
-            <img src="public/standards.png" alt="standard web w3c et accessibilité" />
+            <img src="/standards.png" alt="standard web w3c et accessibilité" />
           </div>
           <h3 className='card-title'>standards web</h3>
           <p>Les sites web doivent obeir à certains standards, notamment d'accessibilité, afin d'être consultables par le plus grand nombre.</p>
@@ -70,6 +72,7 @@ function Skills() {
       </div>
     </section >
   );
+
 }
 
 export default Skills;

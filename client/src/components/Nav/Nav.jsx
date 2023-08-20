@@ -1,6 +1,10 @@
-import './nav.css'
-function Nav() {
-
+import { useEffect } from 'react';
+import './nav.css';
+import PropTypes from 'prop-types';
+function Nav({ scrollTop }) {
+  useEffect(() => {
+    handleScroll()
+  })
   return (
     <div className="navbar-container">
       <ul className="navbar">
@@ -19,6 +23,38 @@ function Nav() {
       </ul >
     </div>
   );
+
+  function handleScroll() {
+    const navItemsElements = document.getElementsByClassName('nav-item');
+
+    if (scrollTop >= 0) {
+      navItemsElements[0].classList.add('hasfocus');
+    } if (scrollTop > 683) {
+      navItemsElements[0].classList.remove('hasfocus');
+    }
+
+    if (scrollTop >= 684) {
+      navItemsElements[1].classList.add("hasfocus");
+    } if (scrollTop < 684 || scrollTop >= 1596) {
+      navItemsElements[1].classList.remove('hasfocus');
+    }
+
+    if (scrollTop >= 1596) {
+      navItemsElements[2].classList.add('hasfocus');
+    } if (scrollTop <= 1596 || scrollTop >= 3078) {
+      navItemsElements[2].classList.remove('hasfocus');
+    }
+
+    if (scrollTop >= 3078) {
+      navItemsElements[3].classList.add('hasfocus');
+    } if (scrollTop <= 3078) {
+      navItemsElements[3].classList.remove('hasfocus')
+    }
+  }
+}
+
+Nav.propTypes = {
+  scrollTop: PropTypes.number
 }
 
 export default Nav;

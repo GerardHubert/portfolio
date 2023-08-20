@@ -74,12 +74,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  ;
   border-radius: 50%;
   transform-origin: center;
   transform: scale(0);
   transition: 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: -5;
 }
 
 .network-icon:hover::after {
