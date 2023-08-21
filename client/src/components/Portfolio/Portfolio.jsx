@@ -43,6 +43,8 @@ function Portfolio() {
               onPointerLeave={() => handlePointerLeaveThumbnail(2)}>
               <img src="/on_mate_quoi.png" alt="minitature du site" className="thumbnail" />
               <div className="badges-container">
+                <span className="badge badge-2">HTML5</span>
+                <span className="badge badge-2">CSS3</span>
                 <span className="badge badge-2">PHP</span>
                 <span className="badge badge-2">Twig</span>
                 <span className="badge badge-2">MariaDB</span>
@@ -64,6 +66,8 @@ function Portfolio() {
               onPointerLeave={() => handlePointerLeaveThumbnail(3)}>
               <img src="/game_quizz.png" alt="minitature du site" className="thumbnail" />
               <div className="badges-container">
+                <span className="badge badge-3">HTML5</span>
+                <span className="badge badge-3">CSS3</span>
                 <span className="badge badge-3">Javascript</span>
                 <span className="badge badge-3">ReactJS</span>
               </div>
@@ -84,6 +88,8 @@ function Portfolio() {
               onPointerLeave={() => handlePointerLeaveThumbnail(4)}>
               <img src="/papajoueur.png" alt="minitature du site" className="thumbnail" />
               <div className="badges-container">
+                <span className="badge badge-4">HTML5</span>
+                <span className="badge badge-4">CSS3</span>
                 <span className="badge badge-4">PHP</span>
                 <span className="badge badge-4">Symfony</span>
                 <span className="badge badge-4">PHPUnit</span>
@@ -91,10 +97,31 @@ function Portfolio() {
               </div>
             </a>
             <div className="portfolio-card-details">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod aliquam dicta iste vel aliquid? Suscipit, at quidem! Dicta, nisi rem, minus deserunt corrupti dolore sint aperiam sequi dolorum qui pariatur?
+              Site personnel. Blog à propos de jeux vidéo sous Symfony 6 et PHP8. Espace membres, gestion et modération de commentaires, dashboard administrateur.
             </div>
           </div>
           <div className="portfolio-card-legend">Papajoueur</div>
+        </div>
+        <div className='portfolio-card'>
+          <div className="thumbnail-wrapper">
+            <a href="#home-section"
+              className="portfolio-card-link"
+              onPointerEnter={() => handlePointerOnThumbnail(5)}
+              onPointerLeave={() => handlePointerLeaveThumbnail(5)}>
+              <img src="/portfolio.png" alt="minitature de mon portfolio" className="thumbnail" />
+              <div className="badges-container">
+                <span className="badge badge-5">HTML5</span>
+                <span className="badge badge-5">CSS3</span>
+                <span className="badge badge-5">React.JS</span>
+                <span className="badge badge-5">Express.JS</span>
+                <span className="badge badge-5">Nodemailer</span>
+              </div>
+            </a>
+            <div className="portfolio-card-details">
+              Portfolio, en single page, pour me présenter. Sous React.JS, Express.JS et Nodemailer pour la gestion serveur et envoi des emails.
+            </div>
+          </div>
+          <div className="portfolio-card-legend">Portfolio</div>
         </div>
       </div>
     </section>

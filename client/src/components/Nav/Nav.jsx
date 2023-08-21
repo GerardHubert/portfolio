@@ -41,13 +41,13 @@ function Nav({ scrollTop }) {
 
     if (scrollTop >= 1596) {
       navItemsElements[2].classList.add('hasfocus');
-    } if (scrollTop <= 1596 || scrollTop >= 3078) {
+    } if (scrollTop <= 1596 || scrollTop >= 2508) {
       navItemsElements[2].classList.remove('hasfocus');
     }
 
-    if (scrollTop >= 3078) {
+    if (scrollTop >= 2508) {
       navItemsElements[3].classList.add('hasfocus');
-    } if (scrollTop <= 3078) {
+    } if (scrollTop <= 2508) {
       navItemsElements[3].classList.remove('hasfocus')
     }
   }

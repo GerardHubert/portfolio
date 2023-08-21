@@ -1,9 +1,9 @@
 .portfolio-section {
   min-height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-left: 325px;
 }
 
 .portfolio-cards-container {
@@ -124,7 +124,8 @@
 .badge-1,
 .badge-2,
 .badge-3,
-.badge-4 {
+.badge-4,
+.badge-5 {
   background-color: #01a3a4;
   margin-left: 5px;
   margin-right: 5px;

@@ -1,8 +1,8 @@
 .contact-section {
-  width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
+  margin-left: 325px;
 }
 
 .contact-form-aside,

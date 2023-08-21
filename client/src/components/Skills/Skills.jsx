@@ -11,7 +11,8 @@ function Skills() {
           <hr className='separator' />
           <i className="fa-solid fa-code separator-icon"></i>
         </div>
-        <p className='skills-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur accusantium laboriosam porro, amet, dignissimos natus harum quam aut minima nobis. Nostrum, dolorem facilis mollitia repudiandae eos, animi fuga soluta maiores molestias culpa ut error. Voluptatum laborum cupiditate, saepe nulla suscipit officia dolore? Blanditiis dolor itaque saepe vitae, beatae eveniet.</p>
+        <p className='skills-description'>Ajout de composant React.JS, ajout de fonctionnalités, développement dapplications en single page
+          ou dynamiques avec bases de données, je suis en mesure de vous apporter une solution</p>
       </header>
       <div className="skills-container">
         <div className="skill-card">
