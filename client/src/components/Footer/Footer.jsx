@@ -37,7 +37,7 @@ function Footer() {
             </p>
             <div className="networks-container">
               <a href="https://www.linkedin.com/in/g%C3%A9rard-hubert-ab6213206/" target='_blank' rel='noreferrer'>
-                <img src="public/linkedin-icon.png" alt="linkedin" />
+                <img src="linkedin-icon.png" alt="linkedin" />
               </a>
               <a href="https://github.com/GerardHubert" target='_blank' rel='noreferrer'>
                 <img src="github-icon.png" alt="github" />

@@ -9,10 +9,13 @@ function Contact() {
   const [emailError, setEmailError] = useState("");
   const [contentError, setContentError] = useState("");
   const [validForm, setValidForm] = useState(false)
+  const [confirmMessage, setConfirmMessage] = useState('');
 
   useEffect(() => {
     formValidation();
   })
+
+  let emailConfirmation = <p className='message-success'>{confirmMessage}</p>;
 
   return (
     <section id="contact-section" className='contact-section'>
@@ -44,9 +47,10 @@ function Contact() {
           </div>
         </div>
       </div>
-      <form action="/sendmail" className="contact-form">
+      <form action="/sendmail" method="POST" className="contact-form">
         <fieldset>
           <legend>Renseignez le formulaire de contact</legend>
+          {confirmMessage !== '' ? emailConfirmation : null}
           <div className="form-row">
             <input className="name-input" type="text" name="name" id="name"
               onFocus={e => handleFocus(e)}
@@ -81,8 +85,44 @@ function Contact() {
     </section>
   );
 
+  async function handleMail(e) {
+    e.preventDefault();
+
+    let formData = {
+      name: name,
+      email: email,
+      content: content
+    }
+    let response = await fetch('/sendmail', {
+      method: 'post',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: new URLSearchParams(formData),
+    })
+
+    let data = await response.json();
+    console.log(data);
+    /** gestion de m'indication visuelle (succès ou échec de l'evnvoi du message) */
+    for (const key in data) {
+      if (key === 'success') {
+        console.log('message envoyé avec succès')
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('content').value = '';
+        setConfirmMessage('Votre message a été transmis');
+      }
+      if (key === 'error') {
+        setConfirmMessage('Echec: une erreur est survenue')
+      }
+    }
+
+  }
+
+
   function Button() {
-    const button = <button type="submit" className="submit-button">envoyer</button>;
+    const button = <button type="submit" className="submit-button" onClick={e => handleMail(e)}>envoyer</button>;
     return validForm ? button : null
   }
 
