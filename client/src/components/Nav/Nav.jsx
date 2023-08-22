@@ -26,6 +26,7 @@ function Nav({ scrollTop }) {
 
   function handleScroll() {
     const navItemsElements = document.getElementsByClassName('nav-item');
+    console.log(scrollTop);
 
     if (scrollTop >= 0) {
       navItemsElements[0].classList.add('hasfocus');

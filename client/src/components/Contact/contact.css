@@ -3,6 +3,7 @@
   overflow: hidden;
   display: flex;
   margin-left: 325px;
+  margin-top: 25px;
 }
 
 .contact-form-aside,
@@ -10,6 +11,8 @@
   width: 50%;
   height: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .contact-form-image-wrapper,
@@ -106,7 +109,7 @@
 
 fieldset {
   width: 70%;
-  height: 80%;
+  height: 750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,6 +391,7 @@ legend {
     width: 95%;
     margin: auto;
     flex-direction: column;
+    padding-top: 7vh
   }
 
   .contact-form-aside,

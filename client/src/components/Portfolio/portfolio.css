@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: start;
   margin-left: 325px;
+
 }
 
 .portfolio-cards-container {
@@ -148,6 +149,7 @@
   .portfolio-section {
     width: 95%;
     margin: auto;
+    padding-top: 7vh
   }
 
   .portfolio-cards-container {
