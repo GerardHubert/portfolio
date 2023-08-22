@@ -73,10 +73,10 @@
 
 .thumbnail {
   width: 450px;
-  min-width: 450px;
+  /* min-width: 450px; */
   height: 300px;
   max-height: 300px;
-  min-height: 300px;
+  /* min-height: 300px; */
 }
 
 .portfolio-card-details {
@@ -141,4 +141,58 @@
 
 .show-badge {
   transform: scale(1)
+}
+
+@media screen and (max-width: 400px) {
+
+  .portfolio-section {
+    width: 95%;
+    margin: auto;
+  }
+
+  .portfolio-cards-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .portfolio-card {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .thumbnail-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-card-link {
+    width: 100%;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 250px;
+  }
+
+  .portfolio-card-details {
+    display: none
+  }
+
+  .portfolio-card-legend {
+    width: 100%;
+  }
+
+  .badge-1,
+  .badge-2,
+  .badge-3,
+  .badge-4,
+  .badge-5 {
+    transform: scale(1);
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0;
+  }
+
 }

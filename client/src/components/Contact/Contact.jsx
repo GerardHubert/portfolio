@@ -9,13 +9,14 @@ function Contact() {
   const [emailError, setEmailError] = useState("");
   const [contentError, setContentError] = useState("");
   const [validForm, setValidForm] = useState(false)
-  const [confirmMessage, setConfirmMessage] = useState('');
+  const [message, setMessage] = useState({});
 
   useEffect(() => {
     formValidation();
   })
 
-  let emailConfirmation = <p className='message-success'>{confirmMessage}</p>;
+  let successMessage = <p className='message message-success'>{message.success}</p>;
+  let failureMessage = <p className='message message-failure'>{message.failure}</p>;
 
   return (
     <section id="contact-section" className='contact-section'>
@@ -50,7 +51,8 @@ function Contact() {
       <form action="/sendmail" method="POST" className="contact-form">
         <fieldset>
           <legend>Renseignez le formulaire de contact</legend>
-          {confirmMessage !== '' ? emailConfirmation : null}
+          {message.success ? successMessage : null}
+          {message.failure ? failureMessage : null}
           <div className="form-row">
             <input className="name-input" type="text" name="name" id="name"
               onFocus={e => handleFocus(e)}
@@ -88,6 +90,10 @@ function Contact() {
   async function handleMail(e) {
     e.preventDefault();
 
+    const nameInputElement = document.getElementById('name');
+    const emailInputElement = document.getElementById('email');
+    const contentInputElement = document.getElementById('content');
+
     let formData = {
       name: name,
       email: email,
@@ -106,18 +112,25 @@ function Contact() {
     console.log(data);
     /** gestion de m'indication visuelle (succès ou échec de l'evnvoi du message) */
     for (const key in data) {
+      /** si succès : annuler les animations des label et remettre à zéro les input */
       if (key === 'success') {
         console.log('message envoyé avec succès')
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('content').value = '';
-        setConfirmMessage('Votre message a été transmis');
+        setMessage({
+          'success': 'Votre message a bien été transmis'
+        });
+        nameInputElement.value = '';
+        emailInputElement.value = '';
+        contentInputElement.value = '';
+        nameInputElement.nextElementSibling.classList.remove('slideup');
+        emailInputElement.nextElementSibling.classList.remove('slideup');
+        contentInputElement.nextElementSibling.classList.remove('textarea-label-slide-up');
       }
       if (key === 'error') {
-        setConfirmMessage('Echec: une erreur est survenue')
+        setMessage({
+          'failure': 'Une erreur est survenue'
+        })
       }
     }
-
   }
 
 

@@ -29,3 +29,28 @@
   border-radius: 50%;
   box-shadow: 10px 7px 5px rgba(46, 134, 222, 0.4)
 }
+
+@media screen and (max-width: 400px) {
+
+  .home-section {
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 95%;
+    padding-top: 7vh
+  }
+
+  .home-section-title {
+    text-align: center;
+  }
+
+  .about-me {
+    width: 95%;
+    font-size: 0.9em;
+  }
+
+  .selfie-container {
+    width: 200px;
+    height: 200px;
+  }
+
+}

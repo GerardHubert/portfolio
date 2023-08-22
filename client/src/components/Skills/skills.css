@@ -79,3 +79,34 @@
 .skill-card p {
   text-align: center;
 }
+
+@media screen and (max-width: 400px) {
+
+  .skills-section {
+    margin: auto;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .skills-description {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 85%;
+  }
+
+  .image-wrapper {
+    width: 140px;
+    height: 140px;
+    margin-top: 15px;
+  }
+
+}
