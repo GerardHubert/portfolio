@@ -109,12 +109,10 @@ function Contact() {
     })
 
     let data = await response.json();
-    console.log(data);
     /** gestion de m'indication visuelle (succès ou échec de l'evnvoi du message) */
     for (const key in data) {
       /** si succès : annuler les animations des label et remettre à zéro les input */
       if (key === 'success') {
-        console.log('message envoyé avec succès')
         setMessage({
           'success': 'Votre message a bien été transmis'
         });

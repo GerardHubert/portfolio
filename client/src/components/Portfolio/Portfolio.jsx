@@ -10,6 +10,7 @@ function Portfolio() {
           <hr className='separator' />
           <i className="fa-solid fa-code separator-icon"></i>
         </div>
+        <p className="portfolio-description">Quelques-unes de mes réalisations. Cliquer pour y être redirigé.</p>
       </header>
       <div className="portfolio-cards-container">
         <div className='portfolio-card'>
@@ -87,6 +88,7 @@ function Portfolio() {
               onPointerEnter={() => handlePointerOnThumbnail(4)}
               onPointerLeave={() => handlePointerLeaveThumbnail(4)}>
               <img src="/papajoueur.png" alt="minitature du site" className="thumbnail" />
+              <span className="ongoing">Work in progress</span>
               <div className="badges-container">
                 <span className="badge badge-4">HTML5</span>
                 <span className="badge badge-4">CSS3</span>

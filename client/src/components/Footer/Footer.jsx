@@ -5,7 +5,7 @@ function Footer() {
     <footer className='footer-section'>
       <div className="footer-container">
         <div className="footer-about-me-wrapper">
-          <img className='footer-thumbnail' src="https://picsum.photos/200" alt="gérard hubert" />
+          <img className='footer-thumbnail' src="avatar.png" alt="gérard hubert" />
           <a href="#home-section">
             <h2>A propos de moi</h2>
           </a>

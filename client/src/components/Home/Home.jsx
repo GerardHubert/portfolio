@@ -13,7 +13,7 @@ function Home() {
         </p>
       </div>
       <div className="selfie-container">
-        <img src="https://picsum.photos/350/350" alt="gérard hubert" className="selfie" />
+        <img src="avatar.png" alt="gérard hubert" className="selfie" />
       </div>
     </section>
   );
